@@ -39,4 +39,5 @@ El sitio es 100% estático (HTML + JS + imágenes), por lo que puede alojarse en
 
 - **Horarios**: se editan en el array `horarios` dentro del `<script type="text/x-dc">` al final de `index.html`.
 - **Imágenes**: se agregan a `uploads/` (o `assets/` para elementos de marca) y se referencian con rutas relativas.
-- **SEO / metadata**: título, descripción, Open Graph y JSON-LD (`SportsActivityLocation`) están en el `<helmet>` de `index.html`.
+- **SEO / metadata**: título, descripción, canonical, Open Graph y JSON-LD (`SportsActivityLocation`) están en el `<head>` estático de `index.html` — **no** moverlos al `<helmet>`, porque ahí solo se inyectan con JS y WhatsApp/Facebook no los leen. Si cambian horarios o cantidad de opiniones, actualizarlos también en el JSON-LD, en la meta description y en el texto de la sección "Dónde y cuándo" y el footer.
+- **Sitemap**: al hacer cambios de contenido, actualizar `<lastmod>` en `sitemap.xml`.

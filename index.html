@@ -3,60 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO: va en el <head> estático (no en <helmet>) para que Google, WhatsApp, Facebook, etc. lo lean sin ejecutar JS ===== -->
+<title>La Beta Escalada | Muro de Escalada en Montevideo, Uruguay</title>
+<meta name="description" content="Muro de escalada deportiva con cuerda en Montevideo (Chaná 2240, Cordón). Para todos los niveles, desde principiantes. Lun, mié y vie 20–23 h; sáb y dom 13–18 h. ★ 5.0 en Google.">
+<link rel="canonical" href="https://www.labetaescalada.uy/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="La Beta Escalada">
+<meta name="theme-color" content="#171310">
+<meta name="geo.region" content="UY-MO">
+<meta name="geo.placename" content="Montevideo">
+<meta name="geo.position" content="-34.9040;-56.1681">
+<meta name="ICBM" content="-34.9040, -56.1681">
+<link rel="icon" type="image/png" href="https://www.labetaescalada.uy/assets/logo-beta.png">
+<link rel="apple-touch-icon" href="https://www.labetaescalada.uy/assets/logo-beta.png">
+
+<!-- Open Graph / redes sociales -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_UY">
+<meta property="og:site_name" content="La Beta Escalada">
+<meta property="og:url" content="https://www.labetaescalada.uy/">
+<meta property="og:title" content="La Beta Escalada | Muro de Escalada en Montevideo, Uruguay">
+<meta property="og:description" content="Escalada deportiva con cuerda para todos los niveles en Chaná 2240, Montevideo. Lun, mié y vie 20–23 h; sáb y dom 13–18 h.">
+<meta property="og:image" content="https://www.labetaescalada.uy/uploads/muro-escalada-la-beta-montevideo.jpg">
+<meta property="og:image:width" content="682">
+<meta property="og:image:height" content="381">
+<meta property="og:image:alt" content="Personas escalando en el muro de La Beta Escalada, Montevideo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="La Beta Escalada | Muro de Escalada en Montevideo, Uruguay">
+<meta name="twitter:description" content="Escalada deportiva con cuerda para todos los niveles en Chaná 2240, Montevideo.">
+<meta name="twitter:image" content="https://www.labetaescalada.uy/uploads/muro-escalada-la-beta-montevideo.jpg">
+
+<!-- Datos estructurados (Google: ficha de negocio local, horarios, rating) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["SportsActivityLocation", "ExerciseGym"],
+      "@id": "https://www.labetaescalada.uy/#negocio",
+      "name": "La Beta Escalada",
+      "alternateName": ["La Beta", "La Beta Escalada Montevideo"],
+      "description": "Muro de escalada deportiva con cuerda en Montevideo, Uruguay. Para todos los niveles, desde principiantes hasta escaladores con experiencia.",
+      "url": "https://www.labetaescalada.uy/",
+      "logo": "https://www.labetaescalada.uy/assets/logo-beta.png",
+      "image": [
+        "https://www.labetaescalada.uy/uploads/muro-escalada-la-beta-montevideo.jpg",
+        "https://www.labetaescalada.uy/assets/logo-beta.png"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chaná 2240",
+        "addressLocality": "Montevideo",
+        "addressRegion": "Montevideo",
+        "postalCode": "11200",
+        "addressCountry": "UY"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -34.9040, "longitude": -56.1681 },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=La%20Beta%20Escalada%20Chan%C3%A1%202240%20Montevideo",
+      "areaServed": { "@type": "City", "name": "Montevideo" },
+      "sameAs": ["https://www.instagram.com/labeta.escalada/"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "reviewCount": "31"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday", "Friday"], "opens": "20:00", "closes": "23:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "13:00", "closes": "18:00" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.labetaescalada.uy/#website",
+      "url": "https://www.labetaescalada.uy/",
+      "name": "La Beta Escalada",
+      "inLanguage": "es-UY",
+      "publisher": { "@id": "https://www.labetaescalada.uy/#negocio" }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="image" href="uploads/muro-escalada-la-beta-montevideo.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Barlow:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
-<title>La Beta Escalada | Muro de Escalada Deportiva en Montevideo, Uruguay</title>
 <script>document.addEventListener('touchstart', function () {}, { passive: true });</script>
-<link rel="icon" type="image/png" href="assets/logo-beta.png">
-<link rel="apple-touch-icon" href="assets/logo-beta.png">
-<meta name="description" content="La Beta Escalada: muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles. Visitanos en Chaná 2240.">
-<meta name="keywords" content="escalada Uruguay, escalada deportiva Uruguay, escalada Montevideo, muro de escalada Montevideo, rocódromo Montevideo, climbing gym Uruguay, sport climbing Uruguay, La Beta Escalada">
-<meta name="robots" content="index, follow">
-<meta name="author" content="La Beta Escalada">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="es_UY">
-<meta property="og:site_name" content="La Beta Escalada">
-<meta property="og:title" content="La Beta Escalada | Muro de Escalada Deportiva en Montevideo, Uruguay">
-<meta property="og:description" content="Muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles. Chaná 2240, Montevideo.">
-<meta property="og:image" content="assets/logo-beta.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="La Beta Escalada | Muro de Escalada Deportiva en Montevideo, Uruguay">
-<meta name="twitter:description" content="Muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles.">
-<meta name="twitter:image" content="assets/logo-beta.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SportsActivityLocation",
-  "name": "La Beta Escalada",
-  "description": "Muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles.",
-  "image": "assets/logo-beta.png",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Chaná 2240",
-    "addressLocality": "Montevideo",
-    "postalCode": "11200",
-    "addressCountry": "UY"
-  },
-  "sameAs": ["https://www.instagram.com/labeta.escalada/"],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "18"
-  },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "19:00", "closes": "23:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "19:00", "closes": "23:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "19:00", "closes": "23:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "18:00" }
-  ]
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Barlow+Condensed:wght@400;500;600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; background: #000; }
@@ -120,7 +159,7 @@
 
   <!-- ============ HERO ============ -->
   <section class="lb-hero" style="position:relative; width:100%; height:100vh; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:clamp(20px,4.5vw,40px) clamp(32px,8vw,84px);">
-    <img src="uploads/pasted-1784210238471-0.png" alt="Muro de escalada La Beta" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
+    <img src="uploads/muro-escalada-la-beta-montevideo.jpg" alt="Personas escalando con cuerda en el muro de La Beta Escalada, Montevideo" width="682" height="381" fetchpriority="high" decoding="async" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
     <div class="lb-gradient-diag" style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(20,12,6,0.82) 0%, rgba(20,12,6,0.55) 42%, rgba(20,12,6,0.15) 70%, rgba(20,12,6,0.35) 100%);"></div>
     <div style="position:absolute; left:0; right:0; bottom:0; height:260px; z-index:1; background:linear-gradient(to top, rgba(20,12,6,0.88) 0%, rgba(20,12,6,0.45) 55%, rgba(20,12,6,0) 100%);"></div>
 
@@ -128,13 +167,13 @@
     <div class="lb-topcluster" style="position:relative; z-index:2; display:flex; flex-direction:column; align-items:flex-start; gap:clamp(12px,1.8vw,18px); width:clamp(140px,18vw,230px); flex:none;">
       <!-- logo (breathing) -->
       <div class="lb-logo" style="width:clamp(110px,15vw,210px); height:clamp(110px,15vw,210px); border-radius:50%; overflow:hidden; border:4px solid #a83f0d; box-shadow:0 20px 46px rgba(0,0,0,0.45); animation:labeta-breathe 4.6s ease-in-out infinite; transform-origin:center; transition:border-color .25s ease, box-shadow .25s ease;" style-hover="border-color:#7d2e08; box-shadow:0 22px 56px rgba(168,63,13,0.55);">
-        <img src="assets/logo-beta.png" alt="Logo La Beta Escalada" style="width:100%; height:100%; object-fit:cover; object-position:center 35%;">
+        <img src="assets/logo-beta.png" alt="Logo de La Beta Escalada" width="780" height="780" style="width:100%; height:100%; object-fit:cover; object-position:center 35%;">
       </div>
 
       <!-- climbing elements loading in sequence (left to right) -->
       <div class="lb-elems-row" style="display:flex; align-items:center; justify-content:space-between; width:clamp(140px,18vw,230px);">
         <sc-for list="{{ elementos }}" as="el" hint-placeholder-count="4">
-          <div class="lb-elem-icon" title="{{ el.name }}" style="width:clamp(26px,3.6vw,44px); height:clamp(26px,3.6vw,44px); display:flex; align-items:center; justify-content:center; opacity:0; animation:{{ el.anim }} 4.6s ease-in-out infinite;"><img src="{{ el.img }}" alt="{{ el.name }}" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 5px 12px rgba(0,0,0,0.45));"></div>
+          <div class="lb-elem-icon" title="{{ el.name }}" style="width:clamp(26px,3.6vw,44px); height:clamp(26px,3.6vw,44px); display:flex; align-items:center; justify-content:center; opacity:0; animation:{{ el.anim }} 4.6s ease-in-out infinite;"><img src="{{ el.img }}" alt="" aria-hidden="true" width="512" height="512" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 5px 12px rgba(0,0,0,0.45));"></div>
         </sc-for>
       </div>
 
@@ -183,11 +222,11 @@
       <!-- fila 2: rating (izq) + mas info (der) -->
       <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
         <!-- rating -->
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Beta%20Escalada%20Chan%C3%A1%202240%20Montevideo" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:clamp(6px,1vw,10px); padding:8px 6px 8px 0;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Beta%20Escalada%20Chan%C3%A1%202240%20Montevideo" target="_blank" rel="noopener" aria-label="5.0 estrellas, 31 opiniones en Google" style="display:inline-flex; align-items:center; gap:clamp(6px,1vw,10px); padding:8px 6px 8px 0;">
           <span style="font-family:'Anton',sans-serif; font-size:clamp(17px,2.2vw,22px); color:#fff; line-height:1;">5.0</span>
           <span style="display:flex; flex-direction:column; line-height:1.15;">
             <span style="color:#FFC02E; font-size:clamp(10px,1.2vw,13px); letter-spacing:2px;">★★★★★</span>
-            <span style="color:#d9cec6; font-family:'Barlow',sans-serif; font-size:clamp(9.5px,1.1vw,12px); letter-spacing:0.02em; white-space:nowrap;">21 opiniones en Google</span>
+            <span style="color:#d9cec6; font-family:'Barlow',sans-serif; font-size:clamp(9.5px,1.1vw,12px); letter-spacing:0.02em; white-space:nowrap;">31 opiniones en Google</span>
           </span>
         </a>
 
@@ -207,7 +246,8 @@
         <span style="width:28px; height:3px; background:#E8611C; border-radius:2px; flex:none;"></span>
         <span style="font-family:'Barlow',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.18em; font-size:clamp(11px,1.15vw,13px); color:#E8611C;">Dónde y cuándo</span>
       </div>
-      <h2 style="margin:0 0 clamp(16px,2.6vw,30px); font-family:'Anton',sans-serif; font-weight:400; text-transform:uppercase; font-size:clamp(22px,3.8vw,40px); letter-spacing:0.01em; color:#171310;">Visitanos en La Beta</h2>
+      <h2 style="margin:0 0 10px; font-family:'Anton',sans-serif; font-weight:400; text-transform:uppercase; font-size:clamp(22px,3.8vw,40px); letter-spacing:0.01em; color:#171310;">Visitanos en La Beta</h2>
+      <p style="margin:0 0 clamp(16px,2.6vw,30px); max-width:640px; font-family:'Barlow',sans-serif; font-size:clamp(13px,1.4vw,15.5px); color:#5a5048; line-height:1.55;">La Beta es un muro de <strong>escalada deportiva con cuerda en Montevideo</strong>, en el barrio Cordón. Abierto a todos los niveles: si nunca escalaste, te acompañamos desde el primer día. Abrimos lunes, miércoles y viernes de 20 a 23 h, y sábados y domingos de 13 a 18 h.</p>
 
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:clamp(14px,2.2vw,22px); align-items:stretch;">
         <!-- mapa -->
@@ -257,10 +297,10 @@
       <h2 style="margin:0 0 10px; font-family:'Anton',sans-serif; font-weight:400; text-transform:uppercase; font-size:clamp(22px,3.8vw,40px); letter-spacing:0.01em; color:#fff;">Reglas y Convivencia</h2>
       <p style="margin:0 0 clamp(20px,3vw,32px); max-width:560px; font-family:'Barlow',sans-serif; font-size:clamp(13px,1.4vw,15.5px); color:#d9cec6; line-height:1.5;">Para que la experiencia sea segura y agradable para todxs, te pedimos que leas y respetes estas normas de convivencia dentro del muro.</p>
 
-      <a class="lb-reglas-img" href="uploads/reglas-convivencia.png" target="_blank" rel="noopener" style="display:block; width:100%; max-width:420px; border-radius:16px; overflow:hidden; box-shadow:0 20px 54px rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); transition:transform .25s ease, box-shadow .25s ease;">
-        <img src="uploads/reglas-convivencia.png" alt="Infografía con las reglas y convivencia de La Beta Escalada" style="display:block; width:100%; height:auto;">
+      <a class="lb-reglas-img" href="uploads/reglas-convivencia-la-beta.jpg" target="_blank" rel="noopener" style="display:block; width:100%; max-width:420px; border-radius:16px; overflow:hidden; box-shadow:0 20px 54px rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.08); transition:transform .25s ease, box-shadow .25s ease;">
+        <img src="uploads/reglas-convivencia-la-beta.jpg" alt="Infografía con las reglas de seguridad y convivencia del muro de escalada La Beta" width="1080" height="1920" loading="lazy" decoding="async" style="display:block; width:100%; height:auto;">
       </a>
-      <a href="uploads/reglas-convivencia.png" target="_blank" rel="noopener" style="display:inline-block; margin-top:14px; font-family:'Barlow',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; font-size:clamp(11px,1.1vw,13px); color:#E8611C;">Ver imagen completa →</a>
+      <a href="uploads/reglas-convivencia-la-beta.jpg" target="_blank" rel="noopener" style="display:inline-block; margin-top:14px; font-family:'Barlow',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; font-size:clamp(11px,1.1vw,13px); color:#E8611C;">Ver imagen completa →</a>
     </div>
   </section>
 
@@ -269,7 +309,8 @@
     <div style="max-width:1080px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:22px;">
       <div style="display:flex; flex-direction:column; gap:7px;">
         <div style="font-family:'Anton',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:0.01em; font-size:clamp(19px,2.4vw,23px); color:#fff;">La Beta<span style="color:#E8611C;"> Escalada</span></div>
-        <div style="font-family:'Barlow',sans-serif; font-size:13.5px; color:#b7ab9e;">Chaná 2240, 11200 Montevideo, Uruguay</div>
+        <address style="font-style:normal; font-family:'Barlow',sans-serif; font-size:13.5px; color:#b7ab9e;">Chaná 2240, 11200 Montevideo, Uruguay</address>
+        <div style="font-family:'Barlow',sans-serif; font-size:13px; color:#8a8078;">Muro de escalada deportiva · Lun, mié y vie 20–23 h · Sáb y dom 13–18 h</div>
       </div>
 
       <a class="lb-btn-ig-footer" href="https://www.instagram.com/labeta.escalada/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border-radius:11px; background:rgba(232,97,28,0.14); border:1px solid rgba(232,97,28,0.5); color:#f3ede6; font-family:'Barlow',sans-serif; font-weight:600; font-size:14px; transition:background .2s ease, border-color .2s ease;">
@@ -288,20 +329,20 @@
 class Component extends DCLogic {
   renderVals() {
     const elementos = [
-      { name: "Cuerda y mosquetón", img: "uploads/climbing (1).png", anim: "labeta-c1" },
-      { name: "Casco", img: "uploads/climbing (3).png", anim: "labeta-c2" },
-      { name: "Zapatillas de escalada", img: "uploads/climbing-shoes (1).png", anim: "labeta-c3" },
-      { name: "Escalador", img: "uploads/climbing (2).png", anim: "labeta-c4" },
+      { name: "Cuerda y mosquetón", img: "uploads/icono-cuerda-mosqueton.png", anim: "labeta-c1" },
+      { name: "Casco", img: "uploads/icono-casco-escalada.png", anim: "labeta-c2" },
+      { name: "Zapatillas de escalada", img: "uploads/icono-zapatillas-escalada.png", anim: "labeta-c3" },
+      { name: "Escalador", img: "uploads/icono-escalador.png", anim: "labeta-c4" },
     ];
     const CLOSED = "#b64a2a";
     const horarios = [
-      { dia: "Jueves", hora: "Cerrado", color: CLOSED },
-      { dia: "Viernes", hora: "7 – 11 p.m.", color: "#171310" },
-      { dia: "Sábado", hora: "12 – 6 p.m.", color: "#171310" },
-      { dia: "Domingo", hora: "Cerrado", color: CLOSED },
-      { dia: "Lunes", hora: "7 – 11 p.m.", color: "#171310" },
+      { dia: "Lunes", hora: "20 – 23 h", color: "#171310" },
       { dia: "Martes", hora: "Cerrado", color: CLOSED },
-      { dia: "Miércoles", hora: "7 – 11 p.m.", color: "#171310" },
+      { dia: "Miércoles", hora: "20 – 23 h", color: "#171310" },
+      { dia: "Jueves", hora: "Cerrado", color: CLOSED },
+      { dia: "Viernes", hora: "20 – 23 h", color: "#171310" },
+      { dia: "Sábado", hora: "13 – 18 h", color: "#171310" },
+      { dia: "Domingo", hora: "13 – 18 h", color: "#171310" },
     ];
     return { elementos, horarios };
   }
