@@ -18,8 +18,9 @@ Todo el contenido vive en **[index.html](index.html)**: es un único componente 
 
 ## Secciones
 
-- **Hero** — imagen de portada, logo, título y accesos rápidos (Instagram, cómo llegar, rating de Google).
-- **Dónde y cuándo** (`#labeta-info`) — mapa embebido, dirección y horarios de apertura.
+- **Hero** — imagen de portada, logo, título ("Escalada y Psicomotricidad") y accesos rápidos (Instagram, cómo llegar, rating de Google).
+- **Actividades** (`#actividades`) — dos cards: Muro libre (naranja `#E8611C`, @labeta.escalada) y Escalada Psicomotriz® (turquesa `#2BB3B1`, @escaladapsicomotora).
+- **Dónde y cuándo** (`#labeta-info`) — mapa embebido, dirección y horarios (`#horarios`), con el mismo código de colores que las cards.
 - **Reglas y Convivencia** (`#reglas-convivencia`) — infografía con las normas de uso y convivencia del muro.
 - **Footer** — datos de contacto y link a Instagram.
 
@@ -37,7 +38,7 @@ El sitio es 100% estático (HTML + JS + imágenes), por lo que puede alojarse en
 
 ## Edición de contenido
 
-- **Horarios**: se editan en el array `horarios` dentro del `<script type="text/x-dc">` al final de `index.html`.
+- **Horarios**: se editan en el array `horarios` dentro del `<script type="text/x-dc">` al final de `index.html`. Cada día tiene una lista `items` armada con `muro("20 – 23 h")` o `psico("Psicomotriz · Infancias", "17 y 18 h")`. Si cambian, actualizar también las cards de Actividades y el footer.
 - **Imágenes**: se agregan a `uploads/` (o `assets/` para elementos de marca) y se referencian con rutas relativas.
 - **SEO / metadata**: título, descripción, canonical, Open Graph y JSON-LD (`SportsActivityLocation`) están en el `<head>` estático de `index.html` — **no** moverlos al `<helmet>`, porque ahí solo se inyectan con JS y WhatsApp/Facebook no los leen. Si cambian horarios o cantidad de opiniones, actualizarlos también en el JSON-LD, en la meta description y en el texto de la sección "Dónde y cuándo" y el footer.
 - **Sitemap**: al hacer cambios de contenido, actualizar `<lastmod>` en `sitemap.xml`.
