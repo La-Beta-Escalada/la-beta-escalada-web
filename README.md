@@ -19,7 +19,7 @@ Todo el contenido vive en **[index.html](index.html)**: es un único componente 
 ## Secciones
 
 - **Hero** — imagen de portada, logo, título ("Escalada y Psicomotricidad") y accesos rápidos (Instagram, cómo llegar, rating de Google).
-- **Actividades** (`#actividades`) — dos cards: Muro libre (naranja `#E8611C`, @labeta.escalada) y Escalada Psicomotriz® (turquesa `#2BB3B1`, @escaladapsicomotora).
+- **Actividades** (`#actividades`) — dos cards: Escalada deportiva / muro libre (naranja `#E8611C`, @labeta.escalada) y Escalada Psicomotriz® (turquesa `#2BB3B1`, @escaladapsicomotora).
 - **Dónde y cuándo** (`#labeta-info`) — mapa embebido, dirección y horarios (`#horarios`), con el mismo código de colores que las cards.
 - **Reglas y Convivencia** (`#reglas-convivencia`) — infografía con las normas de uso y convivencia del muro.
 - **Footer** — datos de contacto y link a Instagram.
