@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-UY">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,8 @@
 <meta name="geo.placename" content="Montevideo">
 <meta name="geo.position" content="-34.9040;-56.1681">
 <meta name="ICBM" content="-34.9040, -56.1681">
-<link rel="icon" type="image/png" href="https://www.labetaescalada.uy/assets/logo-beta.png">
-<link rel="apple-touch-icon" href="https://www.labetaescalada.uy/assets/logo-beta.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.labetaescalada.uy/assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.labetaescalada.uy/assets/apple-touch-icon.png">
 
 <!-- Open Graph / redes sociales -->
 <meta property="og:type" content="website">
@@ -184,13 +184,13 @@
     <div class="lb-topcluster" style="position:relative; z-index:2; display:flex; flex-direction:column; align-items:flex-start; gap:clamp(12px,1.8vw,18px); width:clamp(140px,18vw,230px); flex:none;">
       <!-- logo (breathing) -->
       <div class="lb-logo" style="width:clamp(110px,15vw,210px); height:clamp(110px,15vw,210px); border-radius:50%; overflow:hidden; border:4px solid #a83f0d; box-shadow:0 20px 46px rgba(0,0,0,0.45); animation:labeta-breathe 4.6s ease-in-out infinite; transform-origin:center; transition:border-color .25s ease, box-shadow .25s ease;" style-hover="border-color:#7d2e08; box-shadow:0 22px 56px rgba(168,63,13,0.55);">
-        <img src="assets/logo-beta.png" alt="Logo de La Beta Escalada y Psicomotricidad" width="780" height="780" style="width:100%; height:100%; object-fit:cover; object-position:center 35%;">
+        <img src="assets/logo-beta-420.png" alt="Logo de La Beta Escalada y Psicomotricidad" width="420" height="420" fetchpriority="high" style="width:100%; height:100%; object-fit:cover; object-position:center 35%;">
       </div>
 
       <!-- climbing elements loading in sequence (left to right) -->
       <div class="lb-elems-row" style="display:flex; align-items:center; justify-content:space-between; width:clamp(140px,18vw,230px);">
         <sc-for list="{{ elementos }}" as="el" hint-placeholder-count="4">
-          <div class="lb-elem-icon" title="{{ el.name }}" style="width:clamp(26px,3.6vw,44px); height:clamp(26px,3.6vw,44px); display:flex; align-items:center; justify-content:center; opacity:0; animation:{{ el.anim }} 4.6s ease-in-out infinite;"><img src="{{ el.img }}" alt="" aria-hidden="true" width="512" height="512" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 5px 12px rgba(0,0,0,0.45));"></div>
+          <div class="lb-elem-icon" title="{{ el.name }}" style="width:clamp(26px,3.6vw,44px); height:clamp(26px,3.6vw,44px); display:flex; align-items:center; justify-content:center; opacity:0; animation:{{ el.anim }} 4.6s ease-in-out infinite;"><img src="{{ el.img }}" alt="" aria-hidden="true" width="112" height="112" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 5px 12px rgba(0,0,0,0.45));"></div>
         </sc-for>
       </div>
 
@@ -410,6 +410,27 @@
         <img src="uploads/reglas-convivencia-la-beta.jpg" alt="Infografía con las reglas de seguridad y convivencia del muro de escalada La Beta" width="1080" height="1920" loading="lazy" decoding="async" style="display:block; width:100%; height:auto;">
       </a>
       <a href="uploads/reglas-convivencia-la-beta.jpg" target="_blank" rel="noopener" style="display:inline-block; margin-top:14px; font-family:'Barlow',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; font-size:clamp(11px,1.1vw,13px); color:#E8611C;">Ver imagen completa →</a>
+
+      <!-- las mismas reglas en texto: accesible y legible para Google (la infografía es solo imagen) -->
+      <details class="lb-reglas-texto" style="width:100%; max-width:640px; margin-top:22px; text-align:left; background:#221c17; border:1px solid rgba(255,255,255,0.08); border-radius:14px; color:#d9cec6; font-family:'Barlow',sans-serif;">
+        <summary style="cursor:pointer; padding:14px 18px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; font-size:clamp(11px,1.1vw,13px); color:#fff;">Ver reglas en texto</summary>
+        <ul style="margin:0; padding:4px 18px 18px 36px; display:flex; flex-direction:column; gap:10px; font-size:clamp(13px,1.35vw,14.5px); line-height:1.5;">
+          <li><strong style="color:#fff;">Código de colores en cuerdas:</strong> en cada punta encontrarás una cinta de color. Rojo: únicamente de top (semiestática). Verde: lead (dinámica).</li>
+          <li><strong style="color:#fff;">Espacio libre de acoso:</strong> en este espacio la violencia de género no tiene permiso. Ante cualquier situación, hablá con el monitor en el momento. No estás sola.</li>
+          <li><strong style="color:#fff;">Ante dudas o preocupaciones, consultá al monitor:</strong> tener dudas sobre seguridad y el deporte es frecuente; consultá las veces que sea necesario.</li>
+          <li><strong style="color:#fff;">Tomá mate y comé en el área designada:</strong> las mesas, sillas y butacas están a tu disposición. Recordá tirar la yerba en el tacho rojo.</li>
+          <li><strong style="color:#fff;">Cuidá el baño y su higiene:</strong> los baños los cuidamos entre todxs. Si faltan productos de higiene, comentanos.</li>
+          <li><strong style="color:#fff;">No pases la beta si no te la solicitan:</strong> preguntá antes a quien escala si quiere saberla; a veces no la quieren.</li>
+          <li><strong style="color:#fff;">Dejá el equipo ordenado luego de usarlo:</strong> el orden y el cuidado de los equipos son importantes para su mantenimiento y para quien viene detrás.</li>
+          <li><strong style="color:#fff;">Avisá si encontrás presas flojas, tornillos o cualquier riesgo:</strong> la estructura y los componentes del muro pueden presentar desperfectos; avisar es una buena forma de cuidar a lxs demás.</li>
+          <li>Perros lejos del muro mientras se escala.</li>
+          <li>Avisá cuando quieras subir una ruta y esperá tu turno.</li>
+          <li>No escales abajo cuando hay gente en el mismo top.</li>
+          <li>No está permitido realizar rappel sin previo aviso.</li>
+          <li>No está permitido usar la pedana.</li>
+          <li>Está bueno saludar al llegar.</li>
+        </ul>
+      </details>
     </div>
   </section>
 
